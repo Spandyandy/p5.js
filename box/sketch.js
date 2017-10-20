@@ -12,7 +12,6 @@ function setup() {
 }
 
 function mousePressed() {
-  // Generate the next set of boxes
   var next = [];
   for (var i = 0; i < sponge.length; i++) {
     var b = sponge[i];
@@ -27,7 +26,6 @@ function draw() {
   rotateX(a);
   rotateY(a * 0.4);
   rotateZ(a * 0.1);
-  // Show what you've got!
   for (var i = 0; i < sponge.length; i++) {
     sponge[i].show();
   }

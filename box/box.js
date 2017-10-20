@@ -25,7 +25,6 @@ function Box(x, y, z, r) {
     stroke(255);
     noStroke();
     noFill();
-    //fill(255);
     box(this.r);
     pop();
   }
