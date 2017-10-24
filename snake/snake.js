@@ -26,7 +26,7 @@ function Snake() {
       var pos = this.tail[i];
       var d = dist(this.x, this.y, pos.x, pos.y);
       if (d < 1) {
-        console.log('starting over');
+        alert('Game over');
         this.total = 0;
         this.tail = [];
       }
