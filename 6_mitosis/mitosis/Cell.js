@@ -19,12 +19,13 @@ function Cell(pos, r, c) {
   }
 
   this.mitosis = function() {
-    //this.pos.x += random(-this.r, this.r);
+    this.pos.x += random(-this.r, this.r);
     var cell = new Cell(this.pos, this.r*0.8, this.c);
     return cell;
   }
 
   this.move = function() {
+    //this.pos.set(mouseX+x, mouseY+x);
     var vel = p5.Vector.random2D();
     this.pos.add(vel);
   }
